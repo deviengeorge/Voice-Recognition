@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    /* background: radial-gradient(100% 200% at left, white 50%, #01b0f0 50.1%); */
+    background-image: url(../background.png);
+    background-position: center;
+    background: url(../background.png) cover no-repeat;
+    overflow: hidden;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: cursive-sweet;
+    margin-top: 30vh;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 6px;
+    color: #000000;
+    text-shadow: 0px 0px 10px rgba(80, 80, 80, 0.25);
+}
+
+h1 span {
+    font-family: cursive-numbers;
+}
+
+button {
+    animation-delay: 250ms;
+    border: black solid 1px;
+    background-color: #026B92;
+    padding: 20px !important;
+    width: 500px;
+    border-radius: 15px;
+    color: white;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    border: 1px solid black;
+}
+
+.content {
+    margin: 25px;
+    font-size: 38px;
+    color: black;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: cursive-sweet;
+    src: url(../font/Cursive-Font.ttf);
+}
+
+@font-face {
+    font-family: cursive-numbers;
+    src: url(../font/SFBurlingtonScript-Bold.ttf);
+}
+
+@media screen and (max-width:500px) {
+    button {
+        width: 225px
+    }
+
+    .content {
+        font-size: 20px;
+    }
+}
